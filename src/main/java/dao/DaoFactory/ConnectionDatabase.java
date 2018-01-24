@@ -57,9 +57,9 @@ public class ConnectionDatabase {
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
 
-            if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
+            if (!email.equals(user.getEmail()) && password.equals(user.getPassword())) {
                 return true;
-            } else if (!email.equals(user.getEmail()) && password.equals(user.getPassword())) {
+            } else if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
                 return false;
             }
         }

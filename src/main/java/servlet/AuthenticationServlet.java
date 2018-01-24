@@ -19,14 +19,16 @@ public class AuthenticationServlet extends HttpServlet{
 
         String email = req.getParameter("email");
         String password = req.getParameter("password");
+        System.out.println(email);
+        System.out.println(password);
 
         ConnectionDatabase connectionDatabase = new ConnectionDatabase();
         try {
             if(connectionDatabase.authentication(email,password)){
-                System.out.println("yes");
+               req.getRequestDispatcher("/error.jsp").forward(req,resp);
             }
             else if(!connectionDatabase.authentication(email,password)){
-               req.getRequestDispatcher("/error.jsp").forward(req,resp);
+                System.out.println("yes");
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -6,53 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84239891-d1b2-4ccf-a65b-edc70efcc8ad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3828fca6-ef51-4ec3-aec6-f5e23b458f10.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/3828fca6-ef51-4ec3-aec6-f5e23b458f10.xml" />
+    <list default="true" id="84239891-d1b2-4ccf-a65b-edc70efcc8ad" name="Default" comment="authenticationServlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-aop-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-aspects-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-beans-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-context-support-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-core-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-expression-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-instrument-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-instrument-tomcat-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-jdbc-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-jms-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-messaging-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-orm-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-oxm-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-acl-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-acl-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-aspects-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-aspects-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-cas-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-cas-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-config-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-config-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-core-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-core-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-crypto-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-crypto-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-ldap-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-ldap-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-openid-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-openid-3.2.5.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-remoting-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-taglibs-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-security-web-3.1.7.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-test-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/spring-tx-4.3.13.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/servlet/RegistrationServlet.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/dao/DaoFactory/ConnectionDatabase.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/dao/DaoFactory/ConnectionDatabase.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/security/impl/UserWebSecurityImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/security/impl/UserWebSecurityImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/servlet/AuthenticationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/servlet/AuthenticationServlet.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java" afterPath="$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/RegistrationServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/DaoFactory/ConnectionDatabase.class" afterPath="$PROJECT_DIR$/target/classes/dao/DaoFactory/ConnectionDatabase.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/security/impl/UserWebSecurityImpl.class" afterPath="$PROJECT_DIR$/target/classes/security/impl/UserWebSecurityImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/AuthenticationServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlet/AuthenticationServlet.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,23 +51,16 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="online_store: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="online_store@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="online_store: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AuthenticationServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthenticationServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="374">
+              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -119,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user" pinned="false" current-in-tab="true">
         <entry file="das://table:/4d24b1e9/3828fca6-ef51-4ec3-aec6-f5e23b458f10/online_store.user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -131,16 +87,16 @@
       <file leaf-file-name="ConnectionDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+            <state relative-caret-position="462">
+              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1516757667029" expanded="true" signature="299:405" ph="INSERT INTO online_store.user... " />
-                <marker date="1516757667029" expanded="true" signature="451:458" ph="SELECT * FRO... " />
-                <marker date="1516757667029" expanded="true" signature="451:459" ph="SELECT * FRO... online_store." />
-                <marker date="1516757667029" expanded="true" signature="451:479" ph="SELECT email... " />
-                <marker date="1516757667029" expanded="true" signature="451:493" ph="SELECT email... online_store." />
-                <marker date="1516757667029" expanded="true" signature="451:497" ph="SELECT email... user" />
+                <marker date="1516757914265" expanded="true" signature="299:405" ph="INSERT INTO online_store.user... " />
+                <marker date="1516757914265" expanded="true" signature="451:458" ph="SELECT * FRO... " />
+                <marker date="1516757914265" expanded="true" signature="451:459" ph="SELECT * FRO... online_store." />
+                <marker date="1516757914265" expanded="true" signature="451:479" ph="SELECT email... " />
+                <marker date="1516757914265" expanded="true" signature="451:493" ph="SELECT email... online_store." />
+                <marker date="1516757914265" expanded="true" signature="451:497" ph="SELECT email... user" />
               </folding>
             </state>
           </provider>
@@ -149,7 +105,7 @@
       <file leaf-file-name="UserWebSecurityImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="506">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -276,8 +232,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/user" />
         <option value="$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java" />
       </list>
     </option>
   </component>
@@ -705,12 +661,20 @@
       <workItem from="1516663166615" duration="25522000" />
       <workItem from="1516743738052" duration="1054000" />
       <workItem from="1516748822240" duration="3544000" />
-      <workItem from="1516755508146" duration="2207000" />
+      <workItem from="1516755508146" duration="2694000" />
     </task>
+    <task id="LOCAL-00001" summary="authenticationServlet">
+      <created>1516757853172</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516757853172</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111649000" />
+    <option name="totallyTimeSpent" value="112136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,11 +687,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -748,7 +711,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39905548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1700118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,23 +731,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="authenticationServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="authenticationServlet" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1055,23 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/4d24b1e9/3828fca6-ef51-4ec3-aec6-f5e23b458f10/online_store.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1082,16 +1018,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoFactory/ConnectionDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        <state relative-caret-position="462">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1516757667029" expanded="true" signature="299:405" ph="INSERT INTO online_store.user... " />
-            <marker date="1516757667029" expanded="true" signature="451:458" ph="SELECT * FRO... " />
-            <marker date="1516757667029" expanded="true" signature="451:459" ph="SELECT * FRO... online_store." />
-            <marker date="1516757667029" expanded="true" signature="451:479" ph="SELECT email... " />
-            <marker date="1516757667029" expanded="true" signature="451:493" ph="SELECT email... online_store." />
-            <marker date="1516757667029" expanded="true" signature="451:497" ph="SELECT email... user" />
+            <marker date="1516757914265" expanded="true" signature="299:405" ph="INSERT INTO online_store.user... " />
+            <marker date="1516757914265" expanded="true" signature="451:458" ph="SELECT * FRO... " />
+            <marker date="1516757914265" expanded="true" signature="451:459" ph="SELECT * FRO... online_store." />
+            <marker date="1516757914265" expanded="true" signature="451:479" ph="SELECT email... " />
+            <marker date="1516757914265" expanded="true" signature="451:493" ph="SELECT email... online_store." />
+            <marker date="1516757914265" expanded="true" signature="451:497" ph="SELECT email... user" />
           </folding>
         </state>
       </provider>
@@ -1106,11 +1042,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/impl/UserWebSecurityImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/AuthenticationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="374">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/4d24b1e9/3828fca6-ef51-4ec3-aec6-f5e23b458f10/online_store.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
