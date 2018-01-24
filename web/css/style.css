@@ -1,0 +1,137 @@
+#wrapper {
+    font-family: Tahoma, serif;
+}
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+#subheader{
+    width: 100%;
+    height: 30px;
+    background: #0a930a;
+    color: #fff;
+    margin-top: -15px;
+}
+#subheader p{
+    float: left;
+    margin-top: 7px;
+}
+#subheader a{
+    float: right;
+    line-height: 30px;
+    color:#fff ;
+    text-decoration: none;
+    margin-left: 30px;
+}
+/*logo styling*/
+#main-header{
+    width: 100%;
+    height: 100px;
+    background: #1aaa1a;
+    float: left;
+    margin-top: -15px;
+}
+#logo{
+    width: 250px;
+    margin-top: 10px;
+    float: left;
+}
+#ist{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: cursive;
+}
+#iist{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* searching area styling*/
+#search{
+    width: 650px;
+    float: left;
+    padding: 20px;
+    margin-left: 50px;
+}
+.search-area{
+    width: 650px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    padding-left: 15px;
+}
+.search-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: brown;
+    margin-left: -100px;
+}
+/* this is for user menu styling*/
+#user-menu{
+    width: 300px;
+    float: right;
+    margin-top: 20px;
+}
+/* this is for list styling*/
+#user-menu li{
+    float: left;
+    width: 140px;
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+    border-left: 1px solid black;
+}
+#user-menu li:hover{
+    font-size: 30px;
+    transition: all .5s ease;
+}
+#user-menu li a{
+    color: white;
+    text-decoration: none;
+}
+/* this style for navigation bar*/
+#navigation{
+    width: 100%;
+    height: 35px;
+    background: #1aaa1a;
+    float: left;
+    box-shadow: 10px 14px 50px 2px #1aaa1a;
+}
+nav{
+    width: 1280px;
+    margin: 0 auto;
+}
+nav a{
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #000;
+    transition: all .7s ease;
+}
+#slider{
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
+.bx-wrapper .bx-viewport{
+    margin-top: -20px;
+}
+    /*background: #fff none repeat scroll 0 0;*/
+    /*border: 5px solid #fff;*/
+    /*box-shadow: 0 0 5px #ccc;*/
+    /*left: -5px;*/
+    /*transform: translateY(0px);*/
+    /*margin-top: -20px;*/

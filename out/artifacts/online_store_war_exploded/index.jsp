@@ -13,7 +13,7 @@
 
     <style>
         body {
-            background: url("image/beach.jpg");
+            background: url("image/background/beach.jpg");
             background-size: cover;
             margin:0;
         }

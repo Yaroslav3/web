@@ -5,8 +5,8 @@ create table user
 	name varchar(100) not null,
 	surname varchar(100) not null,
 	age int(100) not null,
-	email varchar(100) not null,
 	login varchar(100) not null,
+	email varchar(100) not null,
 	password varchar(300) not null,
 	constraint user_id_uindex
 		unique (id)

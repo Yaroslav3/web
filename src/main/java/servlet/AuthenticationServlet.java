@@ -28,7 +28,7 @@ public class AuthenticationServlet extends HttpServlet{
                req.getRequestDispatcher("/error.jsp").forward(req,resp);
             }
             else if(!connectionDatabase.authentication(email,password)){
-                System.out.println("yes");
+                req.getRequestDispatcher("/store.jsp").forward(req,resp);
             }
         } catch (SQLException e) {
             e.printStackTrace();
