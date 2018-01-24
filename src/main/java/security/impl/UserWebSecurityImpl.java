@@ -1,5 +1,6 @@
 package security.impl;
 
+import dao.DaoFactory.ConnectionDatabase;
 import security.UserWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -21,6 +22,8 @@ public class UserWebSecurityImpl implements UserWebSecurity {
 
     @Override
     public void secure(String password) {
+        ConnectionDatabase database = new ConnectionDatabase();
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     }
 }

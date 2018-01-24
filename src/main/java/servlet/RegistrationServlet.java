@@ -4,11 +4,13 @@ import dao.DaoFactory.ConnectionDatabase;
 import security.UserWebSecurity;
 import security.impl.UserWebSecurityImpl;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -17,13 +19,21 @@ public class RegistrationServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
+        HttpSession session = req.getSession();
         String name = req.getParameter("name");
         String surname = req.getParameter("surname");
         int age = Integer.parseInt(req.getParameter("age"));
         String login = req.getParameter("login");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
+
+        session.setAttribute("name", name);
+        session.setAttribute("surname", surname);
+        session.setAttribute("age", age);
+        session.setAttribute("login", login);
+        session.setAttribute("email", email);
+        session.setAttribute("password", password);
+
         System.out.println(name);
         System.out.println(age);
 
@@ -32,11 +42,14 @@ public class RegistrationServlet extends HttpServlet {
         System.out.println(bCrypt);
 
         ConnectionDatabase database = new ConnectionDatabase();
+
         try {
-            if (!database.addUser(name, surname, age, email, login, bCrypt)) {
-                req.getRequestDispatcher("/registrationSuccessful.jsp").forward(req, resp);
-            } else if (database.addUser(name, surname, age, email, login, bCrypt)) {
-                req.getRequestDispatcher("/error.jsp").forward(req, resp);
+            if (!database.addUser(name, surname, age, login, email, bCrypt)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/registrationSuccessful.jsp");
+                dispatcher.forward(req, resp);
+            } else if (database.addUser(name, surname, age, login, email, bCrypt)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
+                dispatcher.forward(req, resp);
             }
         } catch (SQLException e) {
             e.printStackTrace();

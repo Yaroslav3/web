@@ -971,13 +971,13 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="232" name="email">
+    <column id="241" parent="232" name="login">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="232" name="login">
+    <column id="242" parent="232" name="email">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
