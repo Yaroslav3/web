@@ -1,10 +1,16 @@
 package service.impl;
 
-public class WebSecuritImpl {
+import service.WebSecurityServise;
 
+public class WebSecuritImpl  implements WebSecurityServise{
 
+    @Override
+    public String createBCrypt(String password) {
+        return null;
+    }
 
-    public void cecure(String password){
+    @Override
+    public void secure(String password) {
 
     }
 }

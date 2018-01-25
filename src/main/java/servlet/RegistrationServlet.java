@@ -1,6 +1,8 @@
 package servlet;
 
 import dao.DaoFactory.ConnectionDatabase;
+import dao.UserDao;
+import dao.impl.UserDaoImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -50,13 +52,13 @@ public class RegistrationServlet extends HttpServlet {
 //        String bCrypt = userWebSecurity.createBCrypt(password);
 //        System.out.println(bCrypt);
 
-        ConnectionDatabase database = new ConnectionDatabase();
+        UserDao userDao = new UserDaoImpl();
 
         try {
-            if (!database.addUser(name, surname, age, login, email, password, roles)) {
+            if (!userDao.addUser(name, surname, age, login, email, password, roles)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/registrationSuccessful.jsp");
                 dispatcher.forward(req, resp);
-            } else if (database.addUser(name, surname, age, login, email, password, roles)) {
+            } else if (userDao.addUser(name, surname, age, login, email, password, roles)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
                 dispatcher.forward(req, resp);
             }

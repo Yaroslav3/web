@@ -1,6 +1,7 @@
 package servlet;
 
-import dao.DaoFactory.ConnectionDatabase;
+import dao.UserDao;
+import dao.impl.UserDaoImpl;
 import model.User;
 
 import javax.servlet.RequestDispatcher;
@@ -16,35 +17,25 @@ import java.sql.SQLException;
 @WebServlet("/authenticationServlet")
 public class AuthenticationServlet extends HttpServlet {
 
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        ConnectionDatabase connectionDatabase = new ConnectionDatabase();
         HttpSession session = req.getSession();
-
         String email = req.getParameter("email");
         String password = req.getParameter("password");
         session.setAttribute("email", email);
         session.setAttribute("password", password);
-        try {
-            if (connectionDatabase.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
-                dispatcher.forward(req, resp);
-            } else if (!connectionDatabase.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
-                dispatcher.forward(req, resp);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
 
+        UserDao userDao = new UserDaoImpl();
         User showUsers = null;
         try {
-            showUsers = connectionDatabase.getShowUsers();
+            showUsers = userDao.getShowUsers();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+
         assert showUsers != null;
         String name = showUsers.getName();
         String surname = showUsers.getSurname();
@@ -63,5 +54,18 @@ public class AuthenticationServlet extends HttpServlet {
         session.setAttribute("emailSession", emailSession);
         session.setAttribute("role", role);
 
+        UserDao userDao1 = new UserDaoImpl();
+
+        try {
+            if (userDao1.authentication(email, password)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
+                dispatcher.forward(req, resp);
+            } else if (!userDao1.authentication(email, password)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+                dispatcher.forward(req, resp);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

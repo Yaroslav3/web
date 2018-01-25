@@ -17,12 +17,19 @@
 </head>
 </head>
 <body>
+<style>
+
+    b{
+        color: blue;
+    }
+
+</style>
 <div id="warning">
 
 <div align="center">
     <br>
     <br>
-    Registration user
+    <b>Add products</b>
     <br>
     <br>
     <br>

@@ -22,8 +22,6 @@ public class UserWebSecurityImpl implements UserWebSecurity {
 
     @Override
     public void secure(String password) {
-        ConnectionDatabase database = new ConnectionDatabase();
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     }
 }

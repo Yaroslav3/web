@@ -1,5 +1,3 @@
-<%@ page import="dao.DaoFactory.ConnectionDatabase" %>
-<%@ page import="java.sql.SQLException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -9,7 +7,8 @@
 </head>
 <body>
 <%
-    String mame =(String) session.getAttribute("email");
+    String name = (String) session.getAttribute("name");
+    String surname = (String) session.getAttribute("surname");
     String role = (String) session.getAttribute("role");
 %>
 <div id="wrapper">
@@ -17,12 +16,25 @@
         <div id="subheader">
             <div class="container">
                 <p>::Welcome online store::</p>
-
-                <a href="#">Exit</a>
-                <a href="#">Basket</a>
+                <%if (name != null) {%>
+                <%}%>
+                <%
+                    if ("user".equals(role)) {
+                %>
+                <a href="#"><%=name + " " + surname%>
+                    <a href="#">Basket</a>
+                    <a href="#">Exit</a>
+                </a>
+                <%}%>
+                <%
+                    if ("admin".equals(role)) {
+                %>
                 <a href="admin.jsp">Admin add product</a>
-                <a href="#">Basket</a>
-                <a href="#">Exit</a>
+                <a href="#"><%=name + " " + surname%>
+                    <a href="#">Basket</a>
+                    <a href="#">Exit</a>
+                </a>
+                <%}%>
             </div>
         </div>
 
@@ -77,7 +89,7 @@
         <%--<script src="js/my.js"></script>--%>
 
     </div>
-
+</div>
 </body>
 </html>
 
