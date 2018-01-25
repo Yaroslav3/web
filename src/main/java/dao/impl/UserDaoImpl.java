@@ -7,6 +7,8 @@ import model.User;
 import java.sql.*;
 
 public class UserDaoImpl implements UserDao {
+
+
     private final String INSERT_USER = "INSERT INTO online_store.user (name,surname," +
             "age,login,email,password,table_role) VALUE (?,?,?,?,?,?,?)";
     private final String AUTHENTICATION = "SELECT id, email, password FROM online_store.user";

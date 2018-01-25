@@ -1,6 +1,5 @@
 package servlet;
 
-import dao.DaoFactory.ConnectionDatabase;
 import dao.UserDao;
 import dao.impl.UserDaoImpl;
 

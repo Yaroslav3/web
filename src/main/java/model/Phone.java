@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Phone {
+    private int id;
     private String name;
     private String color;
     private double DisplayResolution;
@@ -25,11 +26,11 @@ public class Phone {
 
     }
 
-    public Phone(String name, String color, double displayResolution,
-                 String displayDiagonal, String cpuName,
-                 double processorFrequency, byte numberOfCores, byte ram,
-                 short memory, byte numberOfMegapixels,
-                 int capacityOfTheBattery, short weight, String photo) {
+    public Phone(int id, String name, String color, double displayResolution, String displayDiagonal,
+                 String cpuName, double processorFrequency, byte numberOfCores, byte ram,
+                 short memory, byte numberOfMegapixels, int capacityOfTheBattery,
+                 short weight, String photo) {
+        this.id = id;
         this.name = name;
         this.color = color;
         DisplayResolution = displayResolution;

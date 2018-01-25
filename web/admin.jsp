@@ -34,18 +34,20 @@
     <br>
     <br>
     <div style="width: 250px">
-        <form action="${pageContext.request.contextPath}/registrationUser" method="post">
-            <input type="text" name="name" class="form-control" placeholder="name">
-            <br>
-            <input type="text" name="surname" class="form-control" placeholder="surname">
-            <br>
-            <input type="text" name="age" class="form-control" placeholder="age">
-            <br>
-            <input type="text" name="login" class="form-control" placeholder="login">
-            <br>
-            <input type="email" name="email" class="form-control" placeholder="@email">
-            <br>
-            <input type="password" name="password" class="form-control" placeholder="Password">
+        <form action="${pageContext.request.contextPath}/admin" method="post" enctype="multipart/form-data">
+            <input type="text" name="nameModel" class="form-control" placeholder="name">
+            <input type="text" name="color" class="form-control" placeholder="color">
+            <input type="number" name="displayResolution" class="form-control" placeholder="display Resolution">
+            <input type="text" name="diagonal" class="form-control" placeholder="diagonal">
+            <input type="text" name="cpuName" class="form-control" placeholder="cpu Name">
+            <input type="number" name="processorFrequency" class="form-control" placeholder="processor Frequency">
+            <input type="number" name="numberOfCores" class="form-control" placeholder="number of cores">
+            <input type="number" name="ram" class="form-control" placeholder="ram">
+            <input type="number" name="memory" class="form-control" placeholder="memory">
+            <input type="text" name="numberOfMegapixels" class="form-control" placeholder="megapixels">
+            <input type="number" name="capacityOfTheBattery" class="form-control" placeholder="capacity of the battery">
+            <input type="number" name="weight" class="form-control" placeholder="weight">
+            <input type="file" name="photo" class="form-control" placeholder="photo">
             <br>
             <a>
                 <input type="submit" name="submit" class="form-control" value="Submit" placeholder="Submit" id="submit">
