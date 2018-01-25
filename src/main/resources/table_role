@@ -1,0 +1,11 @@
+create table table_role
+(
+	id int auto_increment
+		primary key,
+	role varchar(15) not null,
+	constraint table_name_id_uindex
+		unique (id)
+)
+engine=InnoDB
+;
+

@@ -1,78 +1,74 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Start</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet">
+    <title>::Welcome online store::</title>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="back">
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="subheader">
+            <div class="container">
+                <p>::Welcome online store::</p>
+                <a href="admin.jsp">Admin</a>
+                <a href="#">Exit</a>
+            </div>
+        </div>
 
-<div align="center">
+        <!--== header ==-->
+        <div id="main-header">
 
-    <style>
-        body {
-            background: url("image/background/beach.jpg");
-            background-size: cover;
-            margin:0;
-        }
+            <!-- logo -->
+            <div id="logo">
+                <span id="ist">Online</span><span id="iist">store.com</span>
+            </div>
+            <!--==search area==-->
 
-        input {
-            width: 70%;
-            outline: none;
-            padding: 10px 11px;
-            border: 1px #aaa solid;
-            font-size: 15px;
-            background: #fff;
-            display: block;
-            margin: 20px auto;
-        }
+            <div id="search">
+                <form action="">
+                    <input class="search-area" type="text" name="text" placeholder="Search here">
+                    <input class="search-btn" type="submit" name="submit" value="SEARCH">
+                </form>
+            </div>
+            <!--==user-menu==-->
 
-        #submit {
-            background: #19b1ca;
-            color: #fff;
-            border: none;
-        }
-        div {
-            width: 30%;
-            height: 400px;
-            background: rgba(0, 0, 0, .2);
-            box-shadow: 5px 4px 43px #000;
-            position: absolute;
-            top: 80px;
-            left: 200px;
-        }
-        form {
-            margin: 1cm 1cm 1cm 1cm;
-            text-align:center;
-        }
+            <div id="user-menu">
+                <li><a href="authentication.jsp">Enter</a></li>
+                <li><a href="registration.jsp">Registration</a></li>
+            </div>
+        </div>
+        <!--===== navigation bar ======---->
+        <div id="navigation">
+            <nav>
+                <a href="#">Phone</a>
+                <a href="#">TY</a>
+                <a href="#">Laptops</a>
+                <a href="#">Other</a>
+            </nav>
+        </div>
 
-        b {
-            font-size: 25px;
-            color: #fff;
-        }
+        <!--================== home slider=====---------------->
 
-        a {
-            color: #fff;
-        }
+        <%--<div id="slider">--%>
+            <%--<ul class="bxslider">--%>
+                <%--<li><img src="image/photo/523175.jpg"></li>--%>
+                <%--<li><img src="image/photo/872207.jpg"></li>--%>
+                <%--<li><img src="image/photo/517247.jpg"></li>--%>
+            <%--</ul>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<script--%>
+            <%--src="http://code.jquery.com/jquery-2.2.4.js"--%>
+            <%--integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="--%>
+            <%--crossorigin="anonymous"></script>--%>
 
-        img {
-            display: block;
-            margin: -75px auto 0 auto;
-        }
+    <%--<script src="js/jquery.bxslider.min.js"></script>--%>
+    <%--<script src="js/my.js"></script>--%>
 
-    </style>
-
-    <b>Online store</b>
-        <form action="${pageContext.request.contextPath}/authenticationServlet" method="post">
-            <input type="text" name="email" class="form-control" placeholder="@email">
-            <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                   placeholder="Password">
-            <input type="submit" name="submit" class="form-control" value="Submit" placeholder="Submit" id="submit">
-            <a href="registration.jsp">Registration</a>
-        </form>
-    </div>
 </div>
+
 </body>
 </html>
+
+

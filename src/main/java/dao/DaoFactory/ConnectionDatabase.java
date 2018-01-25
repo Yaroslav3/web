@@ -9,8 +9,8 @@ public class ConnectionDatabase {
     private final String LOGIN = "root";
     private final String PASSWORD = "root";
     private final String INSERT_USER = "INSERT INTO online_store.user (name,surname," +
-            "age,login,email,password) VALUE (?,?,?,?,?,?)";
-    private final String AUTHENTICATION = "SELECT  email, password FROM online_store.user";
+            "age,login,email,password,table_role) VALUE (?,?,?,?,?,?,?)";
+    private final String AUTHENTICATION = "SELECT  email, password, table_role FROM online_store.user";
 
 
     public Connection getConnect(String url, String login, String password) throws SQLException {
@@ -29,7 +29,7 @@ public class ConnectionDatabase {
     }
 
     public boolean addUser(String name, String surname, int age, String login,
-                           String email, String password) throws SQLException {
+                           String email, String password, int role) throws SQLException {
 
         Connection connect = getConnect(URL, LOGIN, PASSWORD);
         PreparedStatement prepInsert = connect.prepareStatement(INSERT_USER);
@@ -37,9 +37,10 @@ public class ConnectionDatabase {
         prepInsert.setString(1, name);
         prepInsert.setString(2, surname);
         prepInsert.setInt(3, age);
-        prepInsert.setString(4, email);
-        prepInsert.setString(5, login);
+        prepInsert.setString(4, login);
+        prepInsert.setString(5, email);
         prepInsert.setString(6, password);
+        prepInsert.setInt(7,role);
         prepInsert.execute();
         connect.commit();
         prepInsert.close();
@@ -56,6 +57,7 @@ public class ConnectionDatabase {
             User user = new User();
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
+
 
             if (!email.equals(user.getEmail()) && password.equals(user.getPassword())) {
                 return true;

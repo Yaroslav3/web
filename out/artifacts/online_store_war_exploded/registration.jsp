@@ -9,44 +9,55 @@
 <body>
 
 <style>
+
     body {
-        background: url("image/beach.jpg");
+        background: beige;
         background-size: cover;
         marfin: 0;
     }
+
     #submit {
         background: #19b1ca;
         color: #fff;
         border: none;
     }
+    fieldset legend{
+        color: brown;
+    }
+
 </style>
 <div align="center">
     <br>
     <br>
-    Registration user
-    <br>
-    <br>
-    <br>
     <div style="width: 250px">
-        <form action="${pageContext.request.contextPath}/registrationUser"  method="post">
-            <input type="text" name="name" class="form-control" placeholder="name">
+        <fieldset>
+            <legend>Registration</legend>
             <br>
-            <input type="text" name="surname" class="form-control" placeholder="surname">
             <br>
-            <input type="text" name="age" class="form-control" placeholder="age">
             <br>
-            <input type="text" name="login" class="form-control" placeholder="login">
-            <br>
-            <input type="email" name="email" class="form-control" placeholder="@email">
-            <br>
-            <input type="password" name="password" class="form-control" placeholder="Password">
-            <br>
-            <a>
-                <input type="submit" name="submit" class="form-control" value="Submit" placeholder="Submit" id="submit">
-            </a>
-        </form>
-
+            <form action="${pageContext.request.contextPath}/registrationUser" method="post">
+                <input type="text" name="name" class="form-control" placeholder="name">
+                <br>
+                <input type="text" name="surname" class="form-control" placeholder="surname">
+                <br>
+                <input type="text" name="age" class="form-control" placeholder="age">
+                <br>
+                <input type="text" name="login" class="form-control" placeholder="login">
+                <br>
+                <input type="email" name="email" class="form-control" placeholder="@email">
+                <br>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <br>
+                <a>
+                    <input type="submit" name="submit" class="form-control" value="Submit" placeholder="Submit"
+                           id="submit">
+                    <input type="checkbox" name="role" id="role"> admin
+                </a>
+            </form>
+        </fieldset>
     </div>
+    <label>
+    </label>
 </div>
 </body>
 </html>

@@ -1,8 +1,6 @@
 package servlet;
 
 import dao.DaoFactory.ConnectionDatabase;
-import security.UserWebSecurity;
-import security.impl.UserWebSecurityImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,6 +14,8 @@ import java.sql.SQLException;
 
 @WebServlet("/registrationUser")
 public class RegistrationServlet extends HttpServlet {
+    private int roleInt = 0;
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -26,6 +26,7 @@ public class RegistrationServlet extends HttpServlet {
         String login = req.getParameter("login");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
+        String role = req.getParameter("role");
 
         session.setAttribute("name", name);
         session.setAttribute("surname", surname);
@@ -33,21 +34,29 @@ public class RegistrationServlet extends HttpServlet {
         session.setAttribute("login", login);
         session.setAttribute("email", email);
         session.setAttribute("password", password);
+        session.setAttribute("role", role);
 
-        System.out.println(name);
+        if (role == null) {
+            roleInt = 1;
+        }
+         else if (role.equals("no")) {
+            roleInt = 2;
+
+        }
         System.out.println(age);
+        System.out.println(role);
 
-        UserWebSecurity userWebSecurity = new UserWebSecurityImpl();
-        String bCrypt = userWebSecurity.createBCrypt(password);
-        System.out.println(bCrypt);
+//        UserWebSecurity userWebSecurity = new UserWebSecurityImpl();
+//        String bCrypt = userWebSecurity.createBCrypt(password);
+//        System.out.println(bCrypt);
 
         ConnectionDatabase database = new ConnectionDatabase();
 
         try {
-            if (!database.addUser(name, surname, age, login, email, bCrypt)) {
+            if (!database.addUser(name, surname, age, login, email, password, roleInt)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/registrationSuccessful.jsp");
                 dispatcher.forward(req, resp);
-            } else if (database.addUser(name, surname, age, login, email, bCrypt)) {
+            } else if (database.addUser(name, surname, age, login, email, password, roleInt)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
                 dispatcher.forward(req, resp);
             }

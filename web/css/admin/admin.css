@@ -1,0 +1,13 @@
+#wrapper{
+    font-family: Tahoma, serif;
+}
+body {
+    background: silver;
+    background-size: cover;
+    marfin: 0;
+}
+#submit {
+    background: #19b1ca;
+    color: #fff;
+    border: none;
+}

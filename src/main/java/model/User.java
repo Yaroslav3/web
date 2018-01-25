@@ -1,10 +1,5 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class User {
 
     private String name;
@@ -13,16 +8,28 @@ public class User {
     private String email;
     private String login;
     private String password;
+    private int role;
 
-    public User(){
+    public User() {
 
     }
 
-    public User(String name, String surname, String age, String email) {
+    public User(String name, String surname, String age, String email, String login, String password, int role) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.email = email;
+        this.login = login;
+        this.password = password;
+        this.role = role;
+    }
+
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
     }
 
     public String getName() {
@@ -76,10 +83,13 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age='" + age + '\'' +
                 ", email='" + email + '\'' +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
                 '}';
     }
 }

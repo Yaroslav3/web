@@ -14,7 +14,7 @@
 <style>
 
     body {
-        background: url("image/beach.jpg");
+        background: #cccccc;
         background-size: cover;
         margin: 0;
     }
