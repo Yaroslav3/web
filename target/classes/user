@@ -8,6 +8,7 @@ create table user
 	login varchar(100) not null,
 	email varchar(100) not null,
 	password varchar(300) not null,
+	table_role int null,
 	constraint user_id_uindex
 		unique (id)
 )

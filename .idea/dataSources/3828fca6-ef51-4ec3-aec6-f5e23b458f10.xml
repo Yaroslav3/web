@@ -968,7 +968,7 @@
     </index>
     <key id="241" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>role</ColNames>
       <Primary>1</Primary>
     </key>
     <key id="242" parent="232" name="table_name_id_uindex">
@@ -1020,7 +1020,7 @@
     </column>
     <column id="250" parent="233" name="table_role">
       <Position>8</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(15)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="251" parent="233" name="user_id_uindex">

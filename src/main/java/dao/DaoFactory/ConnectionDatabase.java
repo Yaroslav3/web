@@ -10,8 +10,9 @@ public class ConnectionDatabase {
     private final String PASSWORD = "root";
     private final String INSERT_USER = "INSERT INTO online_store.user (name,surname," +
             "age,login,email,password,table_role) VALUE (?,?,?,?,?,?,?)";
-    private final String AUTHENTICATION = "SELECT  email, password, table_role FROM online_store.user";
+    private final String AUTHENTICATION = "SELECT id, email, password FROM online_store.user";
 
+    private static int id_entrance = 0;
 
     public Connection getConnect(String url, String login, String password) throws SQLException {
         Connection connection = null;
@@ -29,7 +30,7 @@ public class ConnectionDatabase {
     }
 
     public boolean addUser(String name, String surname, int age, String login,
-                           String email, String password, int role) throws SQLException {
+                           String email, String password, String role) throws SQLException {
 
         Connection connect = getConnect(URL, LOGIN, PASSWORD);
         PreparedStatement prepInsert = connect.prepareStatement(INSERT_USER);
@@ -40,7 +41,7 @@ public class ConnectionDatabase {
         prepInsert.setString(4, login);
         prepInsert.setString(5, email);
         prepInsert.setString(6, password);
-        prepInsert.setInt(7,role);
+        prepInsert.setString(7, role);
         prepInsert.execute();
         connect.commit();
         prepInsert.close();
@@ -54,7 +55,9 @@ public class ConnectionDatabase {
         ResultSet resultSet = stat.executeQuery(AUTHENTICATION);
 
         while (resultSet.next()) {
+            connect.setAutoCommit(false);
             User user = new User();
+            id_entrance = resultSet.getInt("id");
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
 
@@ -65,7 +68,37 @@ public class ConnectionDatabase {
                 return false;
             }
         }
+        connect.commit();
+        resultSet.close();
+        stat.close();
         return true;
+    }
+
+    public User getShowUsers() throws SQLException {
+        Connection connect = getConnect(URL, LOGIN, PASSWORD);
+        Statement stat = connect.createStatement();
+        ResultSet resultSet = stat.executeQuery("SELECT id,name,surname,age,login,email,table_role FROM online_store.user");
+        User user = new User();
+        int id_table;
+        while (resultSet.next()) {
+            connect.setAutoCommit(false);
+            user.setId(resultSet.getInt("id"));
+            id_table = resultSet.getInt("id");
+            if (id_entrance == id_table) {
+                user.setName(resultSet.getString("name"));
+                user.setSurname(resultSet.getString("surname"));
+                user.setAge(String.valueOf(resultSet.getInt("age")));
+                user.setLogin(resultSet.getString("login"));
+                user.setEmail(resultSet.getString("email"));
+                user.setRole(resultSet.getString("table_role"));
+            }
+        }
+        System.out.println(id_entrance + " id  ");
+        connect.commit();
+        connect.close();
+        stat.close();
+        return user;
+
     }
 }
 

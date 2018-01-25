@@ -1,3 +1,5 @@
+<%@ page import="dao.DaoFactory.ConnectionDatabase" %>
+<%@ page import="java.sql.SQLException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -6,12 +8,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<%
+    String mame =(String) session.getAttribute("email");
+    String role = (String) session.getAttribute("role");
+%>
 <div id="wrapper">
     <div id="header">
         <div id="subheader">
             <div class="container">
                 <p>::Welcome online store::</p>
-                <a href="admin.jsp">Admin</a>
+
+                <a href="#">Exit</a>
+                <a href="#">Basket</a>
+                <a href="admin.jsp">Admin add product</a>
+                <a href="#">Basket</a>
                 <a href="#">Exit</a>
             </div>
         </div>
@@ -51,22 +61,22 @@
         <!--================== home slider=====---------------->
 
         <%--<div id="slider">--%>
-            <%--<ul class="bxslider">--%>
-                <%--<li><img src="image/photo/523175.jpg"></li>--%>
-                <%--<li><img src="image/photo/872207.jpg"></li>--%>
-                <%--<li><img src="image/photo/517247.jpg"></li>--%>
-            <%--</ul>--%>
+        <%--<ul class="bxslider">--%>
+        <%--<li><img src="image/photo/523175.jpg"></li>--%>
+        <%--<li><img src="image/photo/872207.jpg"></li>--%>
+        <%--<li><img src="image/photo/517247.jpg"></li>--%>
+        <%--</ul>--%>
         <%--</div>--%>
-    <%--</div>--%>
-    <%--<script--%>
-            <%--src="http://code.jquery.com/jquery-2.2.4.js"--%>
-            <%--integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="--%>
-            <%--crossorigin="anonymous"></script>--%>
+        <%--</div>--%>
+        <%--<script--%>
+        <%--src="http://code.jquery.com/jquery-2.2.4.js"--%>
+        <%--integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="--%>
+        <%--crossorigin="anonymous"></script>--%>
 
-    <%--<script src="js/jquery.bxslider.min.js"></script>--%>
-    <%--<script src="js/my.js"></script>--%>
+        <%--<script src="js/jquery.bxslider.min.js"></script>--%>
+        <%--<script src="js/my.js"></script>--%>
 
-</div>
+    </div>
 
 </body>
 </html>

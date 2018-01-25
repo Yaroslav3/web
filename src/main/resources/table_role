@@ -1,8 +1,8 @@
 create table table_role
 (
-	id int auto_increment
+	id int auto_increment,
+	role varchar(15) not null
 		primary key,
-	role varchar(15) not null,
 	constraint table_name_id_uindex
 		unique (id)
 )

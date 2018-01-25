@@ -14,7 +14,6 @@ import java.sql.SQLException;
 
 @WebServlet("/registrationUser")
 public class RegistrationServlet extends HttpServlet {
-    private int roleInt = 0;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,15 +35,16 @@ public class RegistrationServlet extends HttpServlet {
         session.setAttribute("password", password);
         session.setAttribute("role", role);
 
+        String roles = null;
         if (role == null) {
-            roleInt = 1;
+            roles = "user";
+        } else if (role.equals("on")) {
+            roles = "admin";
         }
-         else if (role.equals("no")) {
-            roleInt = 2;
 
-        }
         System.out.println(age);
         System.out.println(role);
+        System.out.println(roles);
 
 //        UserWebSecurity userWebSecurity = new UserWebSecurityImpl();
 //        String bCrypt = userWebSecurity.createBCrypt(password);
@@ -53,10 +53,10 @@ public class RegistrationServlet extends HttpServlet {
         ConnectionDatabase database = new ConnectionDatabase();
 
         try {
-            if (!database.addUser(name, surname, age, login, email, password, roleInt)) {
+            if (!database.addUser(name, surname, age, login, email, password, roles)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/registrationSuccessful.jsp");
                 dispatcher.forward(req, resp);
-            } else if (database.addUser(name, surname, age, login, email, password, roleInt)) {
+            } else if (database.addUser(name, surname, age, login, email, password, roles)) {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
                 dispatcher.forward(req, resp);
             }
