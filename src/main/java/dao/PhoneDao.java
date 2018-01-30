@@ -1,10 +1,17 @@
 package dao;
 
+import model.Phone;
+
+import java.io.FileNotFoundException;
 import java.sql.SQLException;
+import java.util.List;
 
 public interface PhoneDao {
 
-    boolean addPhone(String name, String color, double displayResolution,String displayDiagonal, String cpuName,
-                     double processorFrequency, byte numberOfCores, byte ram,short memory, byte numberOfMegapixels,
-                     int capacityOfTheBattery, short weight, String photo) throws SQLException;
+    boolean addPhone(String name, String color, int memory, int numberOfMegapixels, String photo) throws SQLException, FileNotFoundException;
+
+    List<Phone> showPhone() throws SQLException;
+
+    public List<Phone> showPhoneAll() throws SQLException;
+    public void deletePhone(int id) throws SQLException;
 }

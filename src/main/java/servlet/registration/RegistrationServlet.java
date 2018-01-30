@@ -1,4 +1,4 @@
-package servlet;
+package servlet.registration;
 
 import dao.UserDao;
 import dao.impl.UserDaoImpl;
@@ -42,14 +42,6 @@ public class RegistrationServlet extends HttpServlet {
         } else if (role.equals("on")) {
             roles = "admin";
         }
-
-        System.out.println(age);
-        System.out.println(role);
-        System.out.println(roles);
-
-//        UserWebSecurity userWebSecurity = new UserWebSecurityImpl();
-//        String bCrypt = userWebSecurity.createBCrypt(password);
-//        System.out.println(bCrypt);
 
         UserDao userDao = new UserDaoImpl();
 

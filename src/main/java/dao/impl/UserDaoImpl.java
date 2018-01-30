@@ -7,13 +7,11 @@ import model.User;
 import java.sql.*;
 
 public class UserDaoImpl implements UserDao {
-
+    private static int userId;
 
     private final String INSERT_USER = "INSERT INTO online_store.user (name,surname," +
             "age,login,email,password,table_role) VALUE (?,?,?,?,?,?,?)";
     private final String AUTHENTICATION = "SELECT id, email, password FROM online_store.user";
-
-    private static int id = 0;
 
 
     public boolean addUser(String name, String surname, int age, String login, String email, String password, String role) throws SQLException {
@@ -46,7 +44,7 @@ public class UserDaoImpl implements UserDao {
         while (resultSet.next()) {
             connect.setAutoCommit(false);
             User user = new User();
-            id = resultSet.getInt("id");
+            userId = resultSet.getInt("id");
             user.setEmail(resultSet.getString("email"));
             user.setPassword(resultSet.getString("password"));
 
@@ -71,12 +69,12 @@ public class UserDaoImpl implements UserDao {
         Statement stat = connect.createStatement();
         ResultSet resultSet = stat.executeQuery("SELECT id,name,surname,age,login,email,table_role FROM online_store.user");
         User user = new User();
-        int id_table;
+        int idTable;
         while (resultSet.next()) {
             connect.setAutoCommit(false);
             user.setId(resultSet.getInt("id"));
-            id_table = resultSet.getInt("id");
-            if (id == id_table) {
+            idTable = resultSet.getInt("id");
+            if (userId == idTable) {
                 user.setName(resultSet.getString("name"));
                 user.setSurname(resultSet.getString("surname"));
                 user.setAge(String.valueOf(resultSet.getInt("age")));
@@ -85,11 +83,18 @@ public class UserDaoImpl implements UserDao {
                 user.setRole(resultSet.getString("table_role"));
             }
         }
-        System.out.println(id + " id  ");
         connect.commit();
         connect.close();
         stat.close();
         return user;
 
+    }
+
+    public static int getUserId() {
+        return userId;
+    }
+
+    public static void setUserId(int userId) {
+        UserDaoImpl.userId = userId;
     }
 }

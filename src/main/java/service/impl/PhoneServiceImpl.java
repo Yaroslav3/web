@@ -4,21 +4,28 @@ import dao.PhoneDao;
 import dao.impl.PhoneDaoImpl;
 import service.PhoneService;
 
+import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 public class PhoneServiceImpl implements PhoneService {
 
-
-    public boolean addPhone(String name, String color, double displayResolution, String displayDiagonal, String cpuName,
-                            double processorFrequency, byte numberOfCores, byte ram, short memory, byte numberOfMegapixels,
-                            int capacityOfTheBattery, short weight, String photo) {
+    public boolean addPhone( String name, String color, int memory, int numberOfMegapixels, String photo) {
         PhoneDao phoneDao = new PhoneDaoImpl();
         try {
-            return phoneDao.addPhone(name, color, displayResolution, displayDiagonal, cpuName,
-                    processorFrequency, numberOfCores, ram, memory, numberOfMegapixels, capacityOfTheBattery, weight, photo);
-        } catch (SQLException e) {
+            return phoneDao.addPhone( name, color, memory, numberOfMegapixels, photo);
+        } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
         }
         return false;
+    }
+
+    @Override
+    public void deletePhone(int id) {
+        PhoneDao phoneDao = new PhoneDaoImpl();
+        try {
+            phoneDao.deletePhone(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,6 +1,7 @@
-package servlet;
+package servlet.authentication;
 
 import dao.UserDao;
+import dao.impl.PhoneDaoImpl;
 import dao.impl.UserDaoImpl;
 import model.User;
 
@@ -20,11 +21,29 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
         HttpSession session = req.getSession();
         String email = req.getParameter("email");
         String password = req.getParameter("password");
         session.setAttribute("email", email);
         session.setAttribute("password", password);
+
+
+        UserDao userDao1 = new UserDaoImpl();
+
+        try {
+            if (userDao1.authentication(email, password)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
+                dispatcher.forward(req, resp);
+
+            } else if (!userDao1.authentication(email, password)) {
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+                dispatcher.forward(req, resp);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
 
         UserDao userDao = new UserDaoImpl();
@@ -35,7 +54,6 @@ public class AuthenticationServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-
         assert showUsers != null;
         String name = showUsers.getName();
         String surname = showUsers.getSurname();
@@ -44,28 +62,11 @@ public class AuthenticationServlet extends HttpServlet {
         String emailSession = showUsers.getEmail();
         String role = showUsers.getRole();
 
-
-        System.out.println(name + " " + age + " " + emailSession + " " + role);
-
         session.setAttribute("name", name);
         session.setAttribute("surname", surname);
         session.setAttribute("age", age);
         session.setAttribute("login", login);
         session.setAttribute("emailSession", emailSession);
         session.setAttribute("role", role);
-
-        UserDao userDao1 = new UserDaoImpl();
-
-        try {
-            if (userDao1.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
-                dispatcher.forward(req, resp);
-            } else if (!userDao1.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
-                dispatcher.forward(req, resp);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }
