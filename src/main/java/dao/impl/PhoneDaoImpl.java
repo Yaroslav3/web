@@ -11,11 +11,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PhoneDaoImpl implements PhoneDao {
-    private List<Phone> phoneList;
-    public static int idProduct;
+    private List<Phone> phoneList = new ArrayList<>();
+    private static int idProduct;
+    private static int idUpdate;
     private final String ADD_PHONE = "INSERT INTO product.phone (name_phone, color, memory, megapixels, photo)" +
             "" + "VALUE (?,?,?,?,?)";
-    private final String DELETE_PHONE = "DELETE FROM product.phone WHERE id";
+    private final String DELETE_PHONE = "DELETE FROM product.phone WHERE id = ?";
+    private final String UPDATE_PHONE = "UPDATE product.phone SET name_phone=?,color=?,memory=?,megapixels=?,photo=? WHERE id = ?";
 
 
     @Override
@@ -74,7 +76,10 @@ public class PhoneDaoImpl implements PhoneDao {
         Statement statement = connect.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM product.phone");
 
-        phoneList = new ArrayList<>();
+//        if(phoneList == null){
+//            connect.close();
+//        }
+
         while (resultSet.next()) {
             Phone phone = new Phone();
             connect.setAutoCommit(false);
@@ -92,16 +97,66 @@ public class PhoneDaoImpl implements PhoneDao {
         return phoneList;
     }
 
-    public void deletePhone(int id) throws SQLException {
+
+    public boolean deletePhone(int id) throws SQLException {
         ConnectionDatabase connection = new ConnectionDatabase();
         Connection connect = connection.getConnect();
-        PreparedStatement ststDelete = connect.prepareStatement(DELETE_PHONE);
-
-
+        connect.setAutoCommit(false);
+        PreparedStatement statementDelete = connect.prepareStatement(DELETE_PHONE);
+        statementDelete.setInt(1, id);
+        statementDelete.executeUpdate();
+        connect.commit();
+        connect.close();
+        return true;
     }
 
-    public List<Phone> getPhoneList() {
-        return phoneList;
+    public boolean updatePhone(int id, String name, String color, int memory,
+                               int numberOfMegapixels, String photo) throws SQLException {
+        ConnectionDatabase connection = new ConnectionDatabase();
+        Connection connect = connection.getConnect();
+        connect.setAutoCommit(false);
+        PreparedStatement statementUpdate = connect.prepareStatement(UPDATE_PHONE);
+        statementUpdate.setString(1, name);
+        statementUpdate.setString(2, color);
+        statementUpdate.setInt(3, memory);
+        statementUpdate.setInt(4, numberOfMegapixels);
+        statementUpdate.setString(5, photo);
+        statementUpdate.setInt(6,id);
+
+        statementUpdate.executeUpdate();
+        connect.commit();
+        statementUpdate.close();
+        connect.close();
+        return true;
+    }
+
+    public List<Phone> showPhoneId(int id) throws SQLException {
+        System.out.println(id);
+        ConnectionDatabase connectionDatabase = new ConnectionDatabase();
+        Connection connect = connectionDatabase.getConnect();
+        Statement statement = connect.createStatement();
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM product.phone");
+        List<Phone> phoneShow = new ArrayList<>();
+        phoneShow.clear();
+
+        while (resultSet.next()) {
+            int id1 = resultSet.getInt("id");
+            idUpdate = id;
+            if (id == id1) {
+                Phone phone = new Phone();
+                connect.setAutoCommit(false);
+                phone.setName(resultSet.getString("name_phone"));
+                phone.setColor(resultSet.getString("color"));
+                phone.setMemory(resultSet.getInt("memory"));
+                phone.setNumberOfMegapixels(resultSet.getInt("megapixels"));
+                phone.setPhoto(resultSet.getString("photo"));
+                phoneShow.add(phone);
+            }
+        }
+        connect.commit();
+        resultSet.close();
+        connect.close();
+        return phoneShow;
     }
 }
 

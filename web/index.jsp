@@ -83,11 +83,12 @@
                     <a>${phone.color}</a>
                     <a>${phone.numberOfMegapixels}</a>
                     <br>
-                    <img src="${phone.photo}" height="150" width="230" alt="Card image cap">
+                    <img src="${phone.photo}" height="350" width="250" alt="Card image cap">
                     <br>
                     <br>
-                    <input type="submit" name="bay" class="form-control" value="Bay" placeholder="BAY"
-                           id="bay">
+                    <br>
+                    <input type="submit" name="buy" class="form-control" value="Bay" placeholder="BAY"
+                           id="buy">
                     <br>
                 </c:forEach>
             </form>
