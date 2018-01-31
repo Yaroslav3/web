@@ -7,37 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84239891-d1b2-4ccf-a65b-edc70efcc8ad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlet/update/GetIdUpdateServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlet/update/UpdateServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/resources/phone1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/resources/phone2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/resources/phone3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/updatePhone.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3828fca6-ef51-4ec3-aec6-f5e23b458f10.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/3828fca6-ef51-4ec3-aec6-f5e23b458f10.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/dao/impl/PhoneDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/dao/impl/PhoneDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/service/PhoneService.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/service/PhoneService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/service/impl/PhoneServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/service/impl/PhoneServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/WEB-INF/classes/user" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/online_store_war_exploded/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PhoneDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/PhoneDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/PhoneDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/PhoneDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/PhoneService.java" afterPath="$PROJECT_DIR$/src/main/java/service/PhoneService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/PhoneServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/service/impl/PhoneServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/delete/DeleteServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/delete/PhoneServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/table_role" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/user" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/PhoneDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/impl/PhoneDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/PhoneService.class" afterPath="$PROJECT_DIR$/target/classes/service/PhoneService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/PhoneServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/service/impl/PhoneServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/user" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/adminAdd.jsp" afterPath="$PROJECT_DIR$/web/adminAdd.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/adminDelete.jsp" afterPath="$PROJECT_DIR$/web/adminDelete.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/adminUpdate.jsp" afterPath="$PROJECT_DIR$/web/adminUpdate.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,66 +60,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
+            <state relative-caret-position="352">
               <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phone2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/phone2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminAdd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adminAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatePhone.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/updatePhone.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminDelete.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adminDelete.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="118" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="118" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phone3.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/phone3.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phone1.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/resources/phone1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -810,7 +727,7 @@
       <workItem from="1517335424617" duration="607000" />
       <workItem from="1517342679700" duration="7737000" />
       <workItem from="1517394440175" duration="23281000" />
-      <workItem from="1517424443418" duration="4103000" />
+      <workItem from="1517424443418" duration="4237000" />
     </task>
     <task id="LOCAL-00001" summary="authenticationServlet">
       <created>1516757853172</created>
@@ -889,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517319191272</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add update">
+      <created>1517428633818</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1517428633818</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341017000" />
+    <option name="totallyTimeSpent" value="341151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,7 +885,8 @@
     <MESSAGE value="updates" />
     <MESSAGE value="updates2" />
     <MESSAGE value="delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete" />
+    <MESSAGE value="add update" />
+    <option name="LAST_COMMIT_MESSAGE" value="add update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,6 +939,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="20" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,6 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,16 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/adminAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/image/photo/phone1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1266,40 +1183,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/updatePhone.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/adminDelete.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="118" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/phone3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/phone2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/iPhone 7.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1318,6 +1201,50 @@
     <entry file="file://$PROJECT_DIR$/web/resources/phone1.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/phone3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminDelete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="118" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/updatePhone.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/phone2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
