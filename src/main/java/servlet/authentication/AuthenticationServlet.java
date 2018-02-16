@@ -1,7 +1,6 @@
 package servlet.authentication;
 
 import dao.UserDao;
-import dao.impl.PhoneDaoImpl;
 import dao.impl.UserDaoImpl;
 import model.User;
 
@@ -34,12 +33,13 @@ public class AuthenticationServlet extends HttpServlet {
 
         try {
             if (userDao1.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
                 dispatcher.forward(req, resp);
 
             } else if (!userDao1.authentication(email, password)) {
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
                 dispatcher.forward(req, resp);
+
             }
         } catch (SQLException e) {
             e.printStackTrace();

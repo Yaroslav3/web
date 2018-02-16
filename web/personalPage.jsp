@@ -1,16 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: yaroslav
-  Date: 29.01.2018
-  Time: 1:32
+  Date: 31.01.2018
+  Time: 22:53
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Basket</title>
+    <title>Personal Page</title>
 </head>
-<body>
-ljdbojdW JWD PNW DWP kpk  kwppkefkpm me  [ ef
+<body>gl mrpgmrpm rgmpgrm prwm
+
 </body>
 </html>

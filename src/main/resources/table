@@ -1,0 +1,43 @@
+create table table_role
+(
+id int auto_increment,
+role varchar(15) not null
+primary key,
+constraint table_name_id_uindex
+unique (id)
+)
+engine=InnoDB
+;
+
+create table user
+(
+	id int auto_increment
+		primary key,
+	name varchar(100) not null,
+	surname varchar(100) not null,
+	age int(100) not null,
+	login varchar(100) not null,
+	email varchar(100) not null,
+	password varchar(300) not null,
+	table_role varchar(15) null,
+	constraint user_id_uindex
+	unique (id)
+)
+	engine=InnoDB
+;
+create table phone
+(
+	id int auto_increment
+		primary key,
+	name_phone varchar(100) not null,
+	color varchar(100) not null,
+	memory int not null,
+	megapixels int not null,
+	photo varchar(255) not null,
+	constraint phone_id_uindex
+	unique (id)
+)
+	engine=InnoDB
+;
+
+

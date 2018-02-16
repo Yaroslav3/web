@@ -9,12 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/bay")
+@WebServlet("/buy")
 public class BayServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
         String bay = req.getParameter("bay");
+        String id = req.getParameter("id");
+        System.out.println(id);
+        System.out.println(bay);
 
         int userId = UserDaoImpl.getUserId();
 

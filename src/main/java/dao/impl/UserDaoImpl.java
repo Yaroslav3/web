@@ -49,9 +49,9 @@ public class UserDaoImpl implements UserDao {
             user.setPassword(resultSet.getString("password"));
 
 
-            if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
+            if (!email.equals(user.getEmail()) && password.equals(user.getPassword())) {
                 return false;
-            } else if (!email.equals(user.getEmail()) && password.equals(user.getPassword())) {
+            } else if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
                 return true;
             }
         }

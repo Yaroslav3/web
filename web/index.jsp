@@ -24,15 +24,16 @@
                 <%}%>
                 <% if ("user".equals(role)) {%>
                 <a href="#"><%=name + " " + surname%>
-                    <a href="${pageContext.request.contextPath}/basket.jsp">Basket</a>
+                    <a href="/basket.jsp">Basket</a>
                     <a href="${pageContext.request.contextPath}/exit">Exit</a>
                 </a>
                 <%}%>
                 <% if ("admin".equals(role)) {%>
                 <a href="adminChoose.jsp">Admin add product</a>
-                <a href="#"><%=name + " " + surname%>
-                    <a href="${pageContext.request.contextPath}/basket.jsp">Basket</a>
-                    <a href="${pageContext.request.contextPath}/exit" class="exit">Exit</a>
+                <a href="/personalPage.jsp"><%=name + " " + surname%>
+                    <a href="/basket.jsp">Basket</a>
+                    <a href="${pageContext.request.contextPath}/exit" class="exit
+">Exit</a>
                 </a><%}%>
 
             </div>
@@ -44,15 +45,6 @@
             <div id="logo">
                 <span id="ist">Online</span><span id="iist">store.com</span>
             </div>
-            <!--==search area==-->
-
-            <%--<div id="search">--%>
-            <%--<form action="">--%>
-            <%--<input class="search-area" type="text" name="text" placeholder="Search here">--%>
-            <%--<input class="search-btn" type="submit" name="submit" value="SEARCH">--%>
-            <%--</form>--%>
-            <%--</div>--%>
-            <!--==user-menu==-->
 
             <div id="user-menu">
                 <li><a href="authentication.jsp">Enter</a></li>
@@ -73,11 +65,9 @@
             <br>
             <br>
             <h2>Phone</h2>
-            <form action="${pageContext.request.contextPath}/bay" method="get">
+            <form action="${pageContext.request.contextPath}/buy" method="get">
                 <c:forEach items="${phoneShow.showPhoneAll()}" var="phone">
-
                     <br>
-                    <a>${phone.id}</a>
                     <a>${phone.name}</a>
                     <a>${phone.memory}</a>
                     <a>${phone.color}</a>
@@ -87,8 +77,9 @@
                     <br>
                     <br>
                     <br>
-                    <input type="submit" name="buy" class="form-control" value="Bay" placeholder="BAY"
+                    <input href="/buy?id=${phone.id}" type="submit" name="buy" class="form-control" value="Bay" placeholder="BAY"
                            id="buy">
+                    <br>
                     <br>
                 </c:forEach>
             </form>
